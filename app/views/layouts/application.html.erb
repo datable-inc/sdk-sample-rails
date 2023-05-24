@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     <script src="https://storage.googleapis.com/datable-cdn-dev/sdk/20230524105553_93a568c8df7e8735085e4713fbcf57323d003c0f/datable-sdk.js"></script>
+     <script>datable.mount()</script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
