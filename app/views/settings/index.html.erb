@@ -2,6 +2,14 @@
 <p>Find me in app/views/settings/index.html.erb</p>
 
 <script>
-  datable.mount()
-  datable.authenticate('bd66ed2f-763b-4403-a665-ecc3767cb2e2', 'eyJhbGciOiJSUzI1NiJ9.eyJ1cm46ZXhhbXBsZTpjbGFpbSI6dHJ1ZSwiaWF0IjoxNjg0OTMwNTg3LCJzdWIiOiI1NjI3NDliOS1hYTZkLTRlNzgtYjI5MS1hNDc3MmIxZDc1NTUiLCJleHAiOjE2ODUwMTY5ODd9.B3LbaZew6cSWYDHTQYAx7AF7Nmlh0Z7wkLMypCpH6uPBXQ89fr3CRNn15h5xOmeSLPhq4I0nkdXs876xUmEX0LOEVCSUQFO3gQtx6jEl3oAFm3QjM8yzf34pKrlMxTrRmXBpK_PFQLAatklTvQT0gbw1rhjYMoJGyMA3U3HJBelRYNgsbwLtVO9ZAeTiUCpsZqSvEtQr9Hb4oIO0h8nf9VPpSTvJDe8YkbVLYisot3ENev0jdabxHvYPZvo7W3zvVvsnhuoyCzl2flNNU2wd00w42OnKjALnU1zIsv6MmnYwDpc5ot2CSCbq5sEKMGa3Nr3jKWfVuDxBmCjTG296jA')
+    function a() {
+        return new Promise((resolve, reject) => {
+            setTimeout(async () => {
+                await datable.mountSync()
+                // await datable.mount()
+                await datable.authenticate('bd66ed2f-763b-4403-a665-ecc3767cb2e2', 'eyJhbGciOiJSUzI1NiJ9.eyJ1cm46ZXhhbXBsZTpjbGFpbSI6dHJ1ZSwiaWF0IjoxNjg0OTMwNTg3LCJzdWIiOiI1NjI3NDliOS1hYTZkLTRlNzgtYjI5MS1hNDc3MmIxZDc1NTUiLCJleHAiOjE2ODUwMTY5ODd9.B3LbaZew6cSWYDHTQYAx7AF7Nmlh0Z7wkLMypCpH6uPBXQ89fr3CRNn15h5xOmeSLPhq4I0nkdXs876xUmEX0LOEVCSUQFO3gQtx6jEl3oAFm3QjM8yzf34pKrlMxTrRmXBpK_PFQLAatklTvQT0gbw1rhjYMoJGyMA3U3HJBelRYNgsbwLtVO9ZAeTiUCpsZqSvEtQr9Hb4oIO0h8nf9VPpSTvJDe8YkbVLYisot3ENev0jdabxHvYPZvo7W3zvVvsnhuoyCzl2flNNU2wd00w42OnKjALnU1zIsv6MmnYwDpc5ot2CSCbq5sEKMGa3Nr3jKWfVuDxBmCjTG296jA')
+            }, 0)
+        })
+    }
+    a()
 </script>
